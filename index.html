@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Megantara Narapadya's Travel</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-gradient-to-r from-blue-600 to-indigo-600 shadow sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-4 text-white">
+            <h1 class="font-bold text-lg">✈️ Megantara Narapadya's Travel</h1>
+
+            <button id="menu-btn" class="md:hidden focus:outline-none text-2xl transition">
+                <span id="icon-hamburger">☰</span>
+                <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none"
+                    viewBox="0 0 24 24" stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+
+            <ul id="menu" class="hidden md:flex gap-6 font-medium transition-all duration-300 ease-in-out">
+                <li><a href="#home" class="hover:text-yellow-300 transition">Home</a></li>
+                <li><a href="#package" class="hover:text-yellow-300 transition">Our Package</a></li>
+                <li><a href="#profile" class="hover:text-yellow-300 transition">Our Profile</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition">Call Us</a></li>
+            </ul>
+        </div>
+
+        <div id="menu-mobile"
+            class="hidden md:hidden flex-col bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-4 space-y-3 animate-slide-down">
+            <a href="#home" class="hover:text-yellow-300 transition block">Home</a>
+            <a href="#package" class="hover:text-yellow-300 transition block">Our Package</a>
+            <a href="#profile" class="hover:text-yellow-300 transition block">Our Profile</a>
+            <a href="#contact" class="hover:text-yellow-300 transition block">Call Us</a>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-gradient-to-r from-yellow-100 via-pink-100 to-purple-100 py-20 text-center">
+        <h2 class="text-4xl font-extrabold mb-4 text-gray-800">Your Trusted Travel Agent's</h2>
+        <p class="text-gray-700 mb-6">Your happiness is our happiness 🌍</p>
+        <div id="welcomeMessage" class="text-2xl font-bold text-indigo-700"></div>
+    </section>
+
+    <section id="package" class="py-16 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-12 text-gray-800">🌟 Our Packages 🌟</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            <div
+                class="p-6 bg-gradient-to-br from-blue-100 to-blue-200 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h3 class="font-bold text-xl text-blue-800 mb-2">Bali</h3>
+                <p class="text-gray-700">Explore the beauty of Bali. Visit cultural heritage sites and enjoy unique
+                    culinary experiences.</p>
+            </div>
+            <div
+                class="p-6 bg-gradient-to-br from-pink-100 to-pink-200 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h3 class="font-bold text-xl text-pink-800 mb-2">Japan</h3>
+                <p class="text-gray-700">Discover Japan with our travel package. Experience rich traditions and modern
+                    attractions.</p>
+            </div>
+            <div
+                class="p-6 bg-gradient-to-br from-green-100 to-green-200 shadow-lg rounded-lg transform hover:scale-105 transition">
+                <h3 class="font-bold text-xl text-green-800 mb-2">Singapore</h3>
+                <p class="text-gray-700">Enjoy Singapore's modern city life, attractions, and family-friendly
+                    destinations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile" class="py-20 bg-gradient-to-r from-indigo-50 via-white to-indigo-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-10 text-center text-gray-800">📖 Our Profile</h2>
+            <div class="grid md:grid-cols-2 gap-10 items-center">
+                <div class="parallax rounded-xl shadow-lg h-80 md:h-full"></div>
+
+                <div class="text-gray-700">
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">About Company</h3>
+                    <p class="mb-6">We are a trusted travel agency established in 2010, serving thousands of happy
+                        customers worldwide with commitment and professionalism.</p>
+
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">Vision</h3>
+                    <p class="mb-6">To become the leading travel agency that provides unforgettable experiences for
+                        every traveler.</p>
+
+                    <h3 class="text-2xl font-semibold mb-3 text-indigo-700">Mission</h3>
+                    <ul class="list-disc pl-6 space-y-2">
+                        <li>Provide high-quality and affordable travel packages.</li>
+                        <li>Deliver excellent and responsive customer service.</li>
+                        <li>Prioritize comfort and safety for all our customers.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gradient-to-r from-blue-50 to-indigo-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">📩 Message Us</h2>
+            <form id="contactForm" class="bg-white shadow-xl p-8 rounded-lg space-y-6">
+                <div>
+                    <label class="block font-semibold text-gray-700">Your Name</label>
+                    <input type="text" id="name" class="w-full border p-3 rounded focus:ring focus:ring-blue-300"
+                        required />
+                    <small class="error-message text-red-500 text-sm mt-1 hidden"></small>
+                </div>
+                <div>
+                    <label class="block font-semibold text-gray-700">Email Address</label>
+                    <input type="email" id="email" class="w-full border p-3 rounded focus:ring focus:ring-blue-300"
+                        required />
+                    <small class="error-message text-red-500 text-sm mt-1 hidden"></small>
+                </div>
+                <div>
+                    <label class="block font-semibold text-gray-700">Message</label>
+                    <textarea id="message" class="w-full border p-3 rounded focus:ring focus:ring-blue-300"
+                        required></textarea>
+                    <small class="error-message text-red-500 text-sm mt-1 hidden"></small>
+                </div>
+                <button type="submit"
+                    class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:opacity-90 transition">Send</button>
+            </form>
+
+            <div id="formResult" class="mt-6 p-6 bg-green-50 border border-green-200 rounded-lg hidden"></div>
+        </div>
+    </section>
+
+    <footer class="py-8 bg-gradient-to-r from-blue-600 to-indigo-600 text-center text-white">
+        <p class="text-sm">© 2025 Megantara Narapadya's Travel | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
